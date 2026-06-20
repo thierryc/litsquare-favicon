@@ -13,7 +13,7 @@ Litsquare Favicon turns exports from a Figma community file into the favicon fil
 - `site.webmanifest`
 - reusable HTML or React head links
 
-The Figma community file will be published separately as `litsquare favicon`. Until then, the export contract in `figma/export-spec.json` is the source of truth.
+The Figma community file is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269). The export contract in `figma/export-spec.json` is the source of truth.
 
 ## Quick Start
 
@@ -22,7 +22,7 @@ npm install --save-dev litsquare-favicon
 npx litsquare-favicon init --framework react
 ```
 
-Open the Figma community file, export the SVG frames into `litsquare-favicon/source`, then run:
+Open the [`litsquare favicon` Figma community file](https://www.figma.com/community/file/1650255256777018269), export the SVG frames into `litsquare-favicon/source`, then run:
 
 ```sh
 npx litsquare-favicon generate
@@ -41,13 +41,15 @@ Then paste the generated `litsquare-favicon/head.html` into your document head o
 
 Export these frames from the `litsquare favicon` community file as SVG:
 
-| Figma frame | Required | Purpose |
-| --- | --- | --- |
-| `favicon.svg` | yes | Small browser favicon and ICO source |
-| `icon.svg` | no | Opaque standard app icon source |
-| `icon-maskable.svg` | no | Android maskable icon source |
-| `apple-touch-icon.svg` | no | Apple touch icon source |
-| `safari-pinned-tab.svg` | no | Optional Safari pinned tab mask |
+Community file: https://www.figma.com/community/file/1650255256777018269
+
+| Figma frame             | Required | Purpose                              |
+| ----------------------- | -------- | ------------------------------------ |
+| `favicon.svg`           | yes      | Small browser favicon and ICO source |
+| `icon.svg`              | no       | Opaque standard app icon source      |
+| `icon-maskable.svg`     | no       | Android maskable icon source         |
+| `apple-touch-icon.svg`  | no       | Apple touch icon source              |
+| `safari-pinned-tab.svg` | no       | Optional Safari pinned tab mask      |
 
 If optional sources are missing, the CLI falls back to `favicon.svg`.
 

@@ -18,6 +18,8 @@ npx litsquare-favicon validate
 
 Put exported Figma SVG files in `litsquare-favicon/source`.
 
+Figma community file: https://www.figma.com/community/file/1650255256777018269
+
 Required:
 
 - `favicon.svg`

@@ -1,8 +1,8 @@
 # Figma Export Instructions
 
-The community file will be published as `litsquare favicon`.
+The community file is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269).
 
-Until the community link is available, build any compatible Figma file with these frames:
+Export these frames from the community file:
 
 | Frame name | Format | Size | Notes |
 | --- | --- | --- | --- |
