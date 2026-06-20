@@ -1,0 +1,53 @@
+{
+  "communityFileName": "litsquare favicon",
+  "communityFileUrl": null,
+  "exportDirectory": "litsquare-favicon/source",
+  "frames": [
+    {
+      "name": "favicon.svg",
+      "required": true,
+      "format": "SVG",
+      "size": "64x64",
+      "purpose": "Browser SVG favicon and ICO source"
+    },
+    {
+      "name": "icon.svg",
+      "required": false,
+      "format": "SVG",
+      "size": "512x512",
+      "purpose": "Standard opaque app icon source"
+    },
+    {
+      "name": "icon-maskable.svg",
+      "required": false,
+      "format": "SVG",
+      "size": "512x512",
+      "purpose": "Android maskable app icon source"
+    },
+    {
+      "name": "apple-touch-icon.svg",
+      "required": false,
+      "format": "SVG",
+      "size": "180x180",
+      "purpose": "Apple touch icon source"
+    },
+    {
+      "name": "safari-pinned-tab.svg",
+      "required": false,
+      "format": "SVG",
+      "size": "64x64",
+      "purpose": "Optional monochrome Safari pinned tab mask"
+    }
+  ],
+  "generatedOutputs": [
+    "public/favicon.ico",
+    "public/favicon.svg",
+    "public/favicon-96x96.png",
+    "public/apple-touch-icon.png",
+    "public/icon-192.png",
+    "public/icon-512.png",
+    "public/icon-maskable-192.png",
+    "public/icon-maskable-512.png",
+    "public/site.webmanifest"
+  ]
+}

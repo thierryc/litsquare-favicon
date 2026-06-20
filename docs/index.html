@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Litsquare Favicon</title>
+    <meta name="description" content="Generate complete website favicons from a community Figma file with Codex, Claude, or a local CLI.">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="./">
+          <img src="./assets/favicon.svg" alt="" width="32" height="32">
+          <span>Litsquare Favicon</span>
+        </a>
+        <div class="navlinks">
+          <a href="#figma">Figma</a>
+          <a href="#codex">Codex</a>
+          <a href="#claude">Claude</a>
+          <a href="#cli">CLI</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Community Figma file to production favicons</p>
+          <h1>Litsquare Favicon</h1>
+          <p class="lede">A portable workflow for exporting a favicon source from Figma, generating every required browser and app icon, and installing the head tags in any web project.</p>
+          <div class="actions">
+            <a class="button" href="#quick-start">Start</a>
+            <a class="button secondary" href="https://github.com/thierryc/litsquare-favicon">GitHub</a>
+          </div>
+        </div>
+        <div class="preview" aria-label="Generated favicon outputs">
+          <div class="tile small">SVG</div>
+          <div class="tile">96</div>
+          <div class="tile">180</div>
+          <div class="tile dark">192</div>
+          <div class="tile wide">512</div>
+          <div class="tile dark wide">maskable</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="quick-start" class="band">
+        <div class="section-head">
+          <p class="eyebrow">Quick start</p>
+          <h2>Install the workflow in a project</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step">1</span>
+            <h3>Initialize</h3>
+            <pre><code>npm install --save-dev litsquare-favicon
+npx litsquare-favicon init --framework react</code></pre>
+          </article>
+          <article>
+            <span class="step">2</span>
+            <h3>Export from Figma</h3>
+            <p>Export SVG frames from the <strong>litsquare favicon</strong> community file into <code>litsquare-favicon/source</code>.</p>
+          </article>
+          <article>
+            <span class="step">3</span>
+            <h3>Generate</h3>
+            <pre><code>npx litsquare-favicon generate
+npx litsquare-favicon validate</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section id="figma" class="content-grid">
+        <div>
+          <p class="eyebrow">Figma source</p>
+          <h2>Use the community file as the source of truth</h2>
+          <p>The Figma community file will be published as <strong>litsquare favicon</strong>. It defines the frame names, safe areas, and export settings agents should use.</p>
+        </div>
+        <div class="panel">
+          <h3>Required export</h3>
+          <ul>
+            <li><code>favicon.svg</code>: required 64x64 SVG source</li>
+            <li><code>icon.svg</code>: optional 512x512 standard icon source</li>
+            <li><code>icon-maskable.svg</code>: optional 512x512 maskable source</li>
+            <li><code>apple-touch-icon.svg</code>: optional 180x180 Apple source</li>
+            <li><code>safari-pinned-tab.svg</code>: optional monochrome mask</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="codex" class="content-grid reverse">
+        <div class="panel">
+          <h3>Codex prompt</h3>
+          <pre><code>Use the Litsquare Favicon skill.
+Initialize this project, generate favicons from the Figma exports,
+connect the head tags, and validate the output.</code></pre>
+        </div>
+        <div>
+          <p class="eyebrow">Codex</p>
+          <h2>Copy a project-local <code>SKILL.md</code></h2>
+          <p><code>npx litsquare-favicon init</code> installs a Codex-ready <code>SKILL.md</code> so future favicon updates follow the same contract.</p>
+        </div>
+      </section>
+
+      <section id="claude" class="content-grid">
+        <div>
+          <p class="eyebrow">Claude</p>
+          <h2>Copy project instructions for Claude</h2>
+          <p>The initializer writes <code>CLAUDE.md</code> with the same source, generation, and validation rules for Claude Code or Claude-assisted editing.</p>
+        </div>
+        <div class="panel">
+          <h3>Claude prompt</h3>
+          <pre><code>Follow CLAUDE.md.
+Use litsquare-favicon/source as the Figma export folder.
+Run generate and validate before finishing.</code></pre>
+        </div>
+      </section>
+
+      <section id="cli" class="band">
+        <div class="section-head">
+          <p class="eyebrow">CLI output</p>
+          <h2>One command writes the favicon contract</h2>
+        </div>
+        <div class="output-list">
+          <code>public/favicon.ico</code>
+          <code>public/favicon.svg</code>
+          <code>public/favicon-96x96.png</code>
+          <code>public/apple-touch-icon.png</code>
+          <code>public/icon-192.png</code>
+          <code>public/icon-512.png</code>
+          <code>public/icon-maskable-192.png</code>
+          <code>public/icon-maskable-512.png</code>
+          <code>public/site.webmanifest</code>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Litsquare Favicon</span>
+      <span>Made for repeatable favicon exports from Figma.</span>
+    </footer>
+  </body>
+</html>

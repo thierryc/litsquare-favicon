@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Litsquare favicon placeholder">
+  <style>
+    .bg{fill:#e5e7eb}.fg{fill:#171717}@media (prefers-color-scheme:dark){.bg{fill:#171717}.fg{fill:#e5e7eb}}
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <path class="fg" d="M18 46V18h8v21h20v7H18Z"/>
+</svg>

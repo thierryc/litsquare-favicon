@@ -1,0 +1,38 @@
+{
+  "name": "litsquare-favicon",
+  "version": "0.1.0",
+  "description": "Generate a complete favicon set from the Litsquare Favicon community Figma file.",
+  "type": "module",
+  "bin": {
+    "litsquare-favicon": "./bin/litsquare-favicon.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "figma",
+    "SKILL.md",
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "node --check bin/litsquare-favicon.mjs && node --check src/ico.mjs",
+    "test": "node --test",
+    "docs:serve": "python3 -m http.server 4173 --directory docs"
+  },
+  "keywords": [
+    "favicon",
+    "figma",
+    "codex",
+    "claude",
+    "pwa",
+    "icons"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
