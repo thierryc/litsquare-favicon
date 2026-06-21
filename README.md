@@ -1,5 +1,7 @@
 # Litsquare Favicon
 
+![Litsquare Favicon community scaffold thumbnail](docs/assets/community-thumbnail.png)
+
 Litsquare Favicon turns exports from a project Figma file based on the community scaffold into the favicon files a web project needs:
 
 - `favicon.ico`
