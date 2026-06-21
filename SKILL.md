@@ -40,6 +40,8 @@ Ask the user to duplicate or create their own Figma file from the community scaf
 
 Before exporting from Figma, hide scaffold guide layers named `safe-area guide` and `maskable safe-area guide`. These guides are for design review only and must not appear in exported SVG sources. If guide lines are visible in any generated PNG, SVG, or ICO review output, treat the export as failed, re-export with those guide layers hidden, and regenerate. If you edited the working Figma file directly, restore guide visibility after exporting.
 
+For the browser favicon source, make `favicon.svg` use a full 64x64 opaque square background with no rounded corners. Rounded corners belong only in app icon sources such as `apple-touch-icon.svg`, `icon.svg`, and `icon-maskable.svg`. If Safari or another browser shows a white halo/stroke around the tab icon, treat the browser favicon export as failed and re-export `favicon.svg` with a square opaque background.
+
 Then run:
 
 ```sh
@@ -59,6 +61,7 @@ Then add the generated `litsquare-favicon/head.html` contents to the app head.
 
 - Keep favicon URLs stable.
 - Use an opaque background for Apple and PWA PNG icons.
+- Use a square opaque background with no rounded corners for the browser `favicon.svg` source.
 - Keep maskable icon artwork inside the central safe area.
 - Keep `safe-area guide` and `maskable safe-area guide` hidden during source export.
 - Do not export `favicon.ico` directly from Figma; generate it from 16, 32, and 48 pixel PNG sources.

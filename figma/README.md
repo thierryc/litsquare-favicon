@@ -6,6 +6,8 @@ Duplicate the community file into your own Figma account or create a new project
 
 The guide layers are for design review only. They must not appear in exported SVG sources. If guide lines are visible in any generated PNG, SVG, or ICO review output, re-export with those layers hidden and regenerate. Restore guide visibility in the working Figma file after export if you edited it directly.
 
+Export `favicon.svg` with a full opaque square background and no rounded corners. Rounded corners are only for app icon sources such as `apple-touch-icon.svg`, `icon.svg`, and `icon-maskable.svg`.
+
 | Frame name | Format | Size | Notes |
 | --- | --- | --- | --- |
 | `favicon.svg` | SVG | 64x64 | Required. Browser favicon and ICO source. |

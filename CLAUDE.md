@@ -22,3 +22,5 @@ Optional source:
 - `safari-pinned-tab.svg`
 
 Do not hand-edit generated PNG or ICO files. Change the Figma source export or SVG source, then regenerate. If guide lines are visible in any generated PNG, SVG, or ICO review output, treat the export as failed, re-export with `safe-area guide` and `maskable safe-area guide` hidden, and regenerate. Restore guide visibility in the working Figma file after export if you edited it directly.
+
+For the browser favicon source, `favicon.svg` must use a full opaque square background with no rounded corners. Keep rounded corners only for app icon sources such as `apple-touch-icon.svg`, `icon.svg`, and `icon-maskable.svg`. If Safari or another browser shows a white halo/stroke around the tab icon, treat the browser favicon export as failed and re-export `favicon.svg` with a square opaque background.

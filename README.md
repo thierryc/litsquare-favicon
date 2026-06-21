@@ -47,6 +47,8 @@ Community file: https://www.figma.com/community/file/1650255256777018269
 
 Before export, hide layers named `safe-area guide` and `maskable safe-area guide`. They are for design review only and must not be included in exported SVG sources. If guide lines are visible in a generated PNG, SVG, or ICO, re-export with those layers hidden and regenerate.
 
+For Safari and browser tabs, export `favicon.svg` with a full opaque square background and no rounded corners. Keep rounded corners only in app icon sources such as `apple-touch-icon.svg`, `icon.svg`, and `icon-maskable.svg`.
+
 | Figma frame             | Required | Purpose                              |
 | ----------------------- | -------- | ------------------------------------ |
 | `favicon.svg`           | yes      | Small browser favicon and ICO source |

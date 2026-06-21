@@ -12,6 +12,13 @@
       "reason": "These scaffold guides are for design review only and must not be included in exported SVG sources.",
       "failureCondition": "If guide lines are visible in any generated PNG, SVG, or ICO review output, the export failed and must be repeated with these layers hidden.",
       "restoreAfterExport": true
+    },
+    {
+      "action": "useSquareBrowserFaviconBackground",
+      "frameName": "favicon.svg",
+      "reason": "Safari and other browsers can show a white halo around transparent rounded favicon corners when the tab icon is downscaled.",
+      "requirement": "The browser favicon source must use a full opaque square background with no rounded corners. Rounded corners are allowed only in app icon sources such as apple-touch-icon.svg, icon.svg, and icon-maskable.svg.",
+      "failureCondition": "If a browser tab favicon review shows a white halo or stroke around the icon, the favicon.svg export failed and must be repeated with a square opaque background."
     }
   ],
   "exportDirectory": "litsquare-favicon/source",

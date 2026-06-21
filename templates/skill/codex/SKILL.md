@@ -18,6 +18,8 @@ npx litsquare-favicon validate
 
 Duplicate or create a project Figma file from the community scaffold, replace the scaffold visuals with the project artwork, hide layers named `safe-area guide` and `maskable safe-area guide`, and put exported SVG files from that project file in `litsquare-favicon/source`.
 
+For the browser favicon source, `favicon.svg` must use a full opaque square background with no rounded corners. Keep rounded corners only for app icon sources such as `apple-touch-icon.svg`, `icon.svg`, and `icon-maskable.svg`. If Safari or another browser shows a white halo/stroke around the tab icon, treat the browser favicon export as failed and re-export `favicon.svg` with a square opaque background.
+
 Figma community file: https://www.figma.com/community/file/1650255256777018269
 
 Required:
