@@ -1,7 +1,7 @@
 {
   "name": "litsquare-favicon",
   "version": "0.1.0",
-  "description": "Generate a complete favicon set from the Litsquare Favicon community Figma file.",
+  "description": "Generate a complete favicon set from a project Figma file based on the Litsquare Favicon community scaffold.",
   "type": "module",
   "bin": {
     "litsquare-favicon": "./bin/litsquare-favicon.mjs"

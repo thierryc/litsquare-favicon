@@ -1,6 +1,7 @@
 {
   "communityFileName": "litsquare favicon",
   "communityFileUrl": "https://www.figma.com/community/file/1650255256777018269",
+  "sourceWorkflow": "Duplicate or create a project Figma file from the community scaffold, replace the visuals with project artwork, keep the frame names, and export SVGs from the project file.",
   "exportDirectory": "litsquare-favicon/source",
   "frames": [
     {

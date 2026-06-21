@@ -1,8 +1,8 @@
 # Figma Export Instructions
 
-The community file is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269).
+The community scaffold file is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269).
 
-Export these frames from the community file:
+Duplicate the community file into your own Figma account or create a new project file from it. Replace the scaffold visuals with your own mark and colors, keep the frame names, then export these frames from your own file:
 
 | Frame name | Format | Size | Notes |
 | --- | --- | --- | --- |

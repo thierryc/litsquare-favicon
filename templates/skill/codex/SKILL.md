@@ -1,6 +1,6 @@
 ---
 name: litsquare-favicon-project
-description: Add or update project favicons using the Litsquare Favicon exported Figma source frames.
+description: Add or update project favicons using source frames exported from a project Figma file based on the Litsquare Favicon community scaffold.
 ---
 
 # Litsquare Favicon Project Skill
@@ -16,7 +16,7 @@ npx litsquare-favicon validate
 
 ## Source Files
 
-Put exported Figma SVG files in `litsquare-favicon/source`.
+Duplicate or create a project Figma file from the community scaffold, replace the scaffold visuals with the project artwork, and put exported SVG files from that project file in `litsquare-favicon/source`.
 
 Figma community file: https://www.figma.com/community/file/1650255256777018269
 

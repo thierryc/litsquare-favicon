@@ -1,6 +1,6 @@
 # Litsquare Favicon
 
-Litsquare Favicon turns exports from a Figma community file into the favicon files a web project needs:
+Litsquare Favicon turns exports from a project Figma file based on the community scaffold into the favicon files a web project needs:
 
 - `favicon.ico`
 - `favicon.svg`
@@ -13,7 +13,7 @@ Litsquare Favicon turns exports from a Figma community file into the favicon fil
 - `site.webmanifest`
 - reusable HTML or React head links
 
-The Figma community file is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269). The export contract in `figma/export-spec.json` is the source of truth.
+The Figma community scaffold is [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269). Duplicate it or create your own Figma file from it, replace the scaffold visuals with your project artwork, and export from your own file. The export contract in `figma/export-spec.json` is the source of truth.
 
 ## Quick Start
 
@@ -22,7 +22,7 @@ npm install --save-dev litsquare-favicon
 npx litsquare-favicon init --framework react
 ```
 
-Open the [`litsquare favicon` Figma community file](https://www.figma.com/community/file/1650255256777018269), export the SVG frames into `litsquare-favicon/source`, then run:
+Open the [`litsquare favicon` Figma community scaffold](https://www.figma.com/community/file/1650255256777018269), duplicate it into your own Figma account or create a project file from it, replace the scaffold visuals with your own mark, export the SVG frames into `litsquare-favicon/source`, then run:
 
 ```sh
 npx litsquare-favicon generate
@@ -39,7 +39,7 @@ Then paste the generated `litsquare-favicon/head.html` into your document head o
 
 ## Figma Export Contract
 
-Export these frames from the `litsquare favicon` community file as SVG:
+Create your own Figma file from the `litsquare favicon` community scaffold, replace the visual artwork, then export these frames from your own file as SVG:
 
 Community file: https://www.figma.com/community/file/1650255256777018269
 

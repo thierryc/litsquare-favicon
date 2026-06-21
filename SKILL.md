@@ -1,11 +1,11 @@
 ---
 name: litsquare-favicon
-description: Generate complete website favicon assets from the Litsquare Favicon community Figma file and install them into a web project.
+description: Generate complete website favicon assets from a project Figma file based on the Litsquare Favicon community scaffold and install them into a web project.
 ---
 
 # Litsquare Favicon Skill
 
-Use this skill when a project needs a complete favicon set generated from the [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269) community Figma file or from compatible exported SVG frames.
+Use this skill when a project needs a complete favicon set generated from a user-owned Figma file based on the [`litsquare favicon`](https://www.figma.com/community/file/1650255256777018269) community scaffold or from compatible exported SVG frames.
 
 ## What This Skill Does
 
@@ -36,7 +36,7 @@ From the target project root:
 npx litsquare-favicon init --framework react
 ```
 
-Ask the user to export SVG frames from the Figma community file into `litsquare-favicon/source`: https://www.figma.com/community/file/1650255256777018269
+Ask the user to duplicate or create their own Figma file from the community scaffold, replace the scaffold visuals with the project artwork, then export SVG frames from their own file into `litsquare-favicon/source`: https://www.figma.com/community/file/1650255256777018269
 
 Then run:
 

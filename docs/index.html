@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Litsquare Favicon</title>
-    <meta name="description" content="Generate complete website favicons from a community Figma file with Codex, Claude, or a local CLI.">
+    <meta name="description" content="Generate complete website favicons from a project Figma file based on a community scaffold with Codex, Claude, or a local CLI.">
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./styles.css">
   </head>
@@ -24,9 +24,9 @@
       </nav>
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">Community Figma file to production favicons</p>
+          <p class="eyebrow">Community Figma scaffold to production favicons</p>
           <h1>Litsquare Favicon</h1>
-          <p class="lede">A portable workflow for exporting a favicon source from Figma, generating every required browser and app icon, and installing the head tags in any web project.</p>
+          <p class="lede">A portable workflow for turning your own Figma file, based on the Litsquare scaffold, into every required browser and app icon plus stable head tags.</p>
           <div class="actions">
             <a class="button" href="#quick-start">Start</a>
             <a class="button secondary" href="https://github.com/thierryc/litsquare-favicon">GitHub</a>
@@ -58,8 +58,8 @@ npx litsquare-favicon init --framework react</code></pre>
           </article>
           <article>
             <span class="step">2</span>
-            <h3>Export from Figma</h3>
-            <p>Open the <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> community file and export SVG frames into <code>litsquare-favicon/source</code>.</p>
+            <h3>Make your file</h3>
+            <p>Open the <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> community scaffold, duplicate it, replace the visuals with your project artwork, and export SVG frames into <code>litsquare-favicon/source</code>.</p>
           </article>
           <article>
             <span class="step">3</span>
@@ -73,8 +73,8 @@ npx litsquare-favicon validate</code></pre>
       <section id="figma" class="content-grid">
         <div>
           <p class="eyebrow">Figma source</p>
-          <h2>Use the community file as the source of truth</h2>
-          <p>The <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> Figma community file defines the frame names, safe areas, and export settings agents should use.</p>
+          <h2>Use the community file as a scaffold</h2>
+          <p>The <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> Figma community file defines the frame names, safe areas, and export settings. Your project should export from its own copy after replacing the scaffold visuals.</p>
         </div>
         <div class="panel">
           <h3>Required export</h3>
@@ -92,7 +92,7 @@ npx litsquare-favicon validate</code></pre>
         <div class="panel">
           <h3>Codex prompt</h3>
           <pre><code>Use the Litsquare Favicon skill.
-Initialize this project, generate favicons from the Figma exports,
+Initialize this project, generate favicons from my project Figma exports,
 connect the head tags, and validate the output.</code></pre>
         </div>
         <div>
@@ -111,7 +111,7 @@ connect the head tags, and validate the output.</code></pre>
         <div class="panel">
           <h3>Claude prompt</h3>
           <pre><code>Follow CLAUDE.md.
-Use litsquare-favicon/source as the Figma export folder.
+Use litsquare-favicon/source as the export folder for my Figma copy.
 Run generate and validate before finishing.</code></pre>
         </div>
       </section>
