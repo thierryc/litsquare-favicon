@@ -54,7 +54,7 @@ npx litsquare-favicon init --framework react</code></pre>
           <article>
             <span class="step">2</span>
             <h3>Make your file</h3>
-            <p>Open the <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> community scaffold, duplicate it, replace the visuals with your project artwork, and export SVG frames into <code>litsquare-favicon/source</code>.</p>
+            <p>Open the <a href="https://www.figma.com/community/file/1650255256777018269">litsquare favicon</a> community scaffold, duplicate it, replace the visuals with your project artwork, hide guide layers, and export SVG frames into <code>litsquare-favicon/source</code>.</p>
           </article>
           <article>
             <span class="step">3</span>
@@ -73,6 +73,7 @@ npx litsquare-favicon validate</code></pre>
         </div>
         <div class="panel">
           <h3>Required export</h3>
+          <p class="panel-note">Hide <code>safe-area guide</code> and <code>maskable safe-area guide</code> before export. If guide lines appear in generated output, re-export with those layers hidden.</p>
           <ul>
             <li><code>favicon.svg</code>: required 64x64 SVG source</li>
             <li><code>icon.svg</code>: optional 512x512 standard icon source</li>

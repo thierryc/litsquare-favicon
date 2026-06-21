@@ -24,7 +24,7 @@ npm install --save-dev litsquare-favicon
 npx litsquare-favicon init --framework react
 ```
 
-Open the [`litsquare favicon` Figma community scaffold](https://www.figma.com/community/file/1650255256777018269), duplicate it into your own Figma account or create a project file from it, replace the scaffold visuals with your own mark, export the SVG frames into `litsquare-favicon/source`, then run:
+Open the [`litsquare favicon` Figma community scaffold](https://www.figma.com/community/file/1650255256777018269), duplicate it into your own Figma account or create a project file from it, replace the scaffold visuals with your own mark, hide the guide layers, export the SVG frames into `litsquare-favicon/source`, then run:
 
 ```sh
 npx litsquare-favicon generate
@@ -44,6 +44,8 @@ Then paste the generated `litsquare-favicon/head.html` into your document head o
 Create your own Figma file from the `litsquare favicon` community scaffold, replace the visual artwork, then export these frames from your own file as SVG:
 
 Community file: https://www.figma.com/community/file/1650255256777018269
+
+Before export, hide layers named `safe-area guide` and `maskable safe-area guide`. They are for design review only and must not be included in exported SVG sources. If guide lines are visible in a generated PNG, SVG, or ICO, re-export with those layers hidden and regenerate.
 
 | Figma frame             | Required | Purpose                              |
 | ----------------------- | -------- | ------------------------------------ |

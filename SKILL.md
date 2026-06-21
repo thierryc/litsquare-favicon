@@ -38,6 +38,8 @@ npx litsquare-favicon init --framework react
 
 Ask the user to duplicate or create their own Figma file from the community scaffold, replace the scaffold visuals with the project artwork, then export SVG frames from their own file into `litsquare-favicon/source`: https://www.figma.com/community/file/1650255256777018269
 
+Before exporting from Figma, hide scaffold guide layers named `safe-area guide` and `maskable safe-area guide`. These guides are for design review only and must not appear in exported SVG sources. If guide lines are visible in any generated PNG, SVG, or ICO review output, treat the export as failed, re-export with those guide layers hidden, and regenerate. If you edited the working Figma file directly, restore guide visibility after exporting.
+
 Then run:
 
 ```sh
@@ -58,5 +60,6 @@ Then add the generated `litsquare-favicon/head.html` contents to the app head.
 - Keep favicon URLs stable.
 - Use an opaque background for Apple and PWA PNG icons.
 - Keep maskable icon artwork inside the central safe area.
+- Keep `safe-area guide` and `maskable safe-area guide` hidden during source export.
 - Do not export `favicon.ico` directly from Figma; generate it from 16, 32, and 48 pixel PNG sources.
 - Run `npx litsquare-favicon validate` before finishing.

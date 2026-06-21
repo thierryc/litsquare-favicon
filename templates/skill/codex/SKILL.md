@@ -16,7 +16,7 @@ npx litsquare-favicon validate
 
 ## Source Files
 
-Duplicate or create a project Figma file from the community scaffold, replace the scaffold visuals with the project artwork, and put exported SVG files from that project file in `litsquare-favicon/source`.
+Duplicate or create a project Figma file from the community scaffold, replace the scaffold visuals with the project artwork, hide layers named `safe-area guide` and `maskable safe-area guide`, and put exported SVG files from that project file in `litsquare-favicon/source`.
 
 Figma community file: https://www.figma.com/community/file/1650255256777018269
 
@@ -30,6 +30,8 @@ Optional:
 - `icon-maskable.svg`
 - `apple-touch-icon.svg`
 - `safari-pinned-tab.svg`
+
+If guide lines are visible in any generated PNG, SVG, or ICO review output, treat the export as failed, re-export with `safe-area guide` and `maskable safe-area guide` hidden, and regenerate. Restore guide visibility in the working Figma file after export if you edited it directly.
 
 ## Output Contract
 
